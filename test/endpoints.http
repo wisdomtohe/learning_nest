@@ -1,0 +1,55 @@
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "name": "nekeleadmin",
+    "email": "nk@nekele.tg",
+    "password": "nekeleadmin"
+}
+
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJua0BuZWtlbGUudGciLCJpYXQiOjE2MDczNjU5NjMsImV4cCI6MTYwNzQ1MjM2M30.AhmBcuU6cJ7A2VdN8w_FRJFNrWXDsgdPW7Fw7zEcE-WZGtqpc0fe3oWdsWAJ4t2p
+
+{
+    "name": "nekeleadmin",
+    "email": "nk@nekele.tg",
+    "password": "nekeleadmin"
+}
+
+###
+
+GET http://localhost:3000/auth/me HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJua0BuZWtlbGUudGciLCJpYXQiOjE2MDczNjU5NjMsImV4cCI6MTYwNzQ1MjM2M30.AhmBcuU6cJ7A2VdN8w_FRJFNrWXDsgdPW7Fw7zEcE-WZGtqpc0fe3oWdsWAJ4t2p
+
+###
+
+GET http://localhost:3000/todo HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJua0BuZWtlbGUudGciLCJpYXQiOjE2MDczNjU5NjMsImV4cCI6MTYwNzQ1MjM2M30.AhmBcuU6cJ7A2VdN8w_FRJFNrWXDsgdPW7Fw7zEcE-WZGtqpc0fe3oWdsWAJ4t2p
+
+###
+
+POST http://localhost:3000/todo
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJua0BuZWtlbGUudGciLCJpYXQiOjE2MDczNjU5NjMsImV4cCI6MTYwNzQ1MjM2M30.AhmBcuU6cJ7A2VdN8w_FRJFNrWXDsgdPW7Fw7zEcE-WZGtqpc0fe3oWdsWAJ4t2p
+
+{
+    "text": "Verifier si tout marche"
+}
+
+###
+
+POST http://localhost:3000/todo
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJua0BuZWtlbGUudGciLCJpYXQiOjE2MDczNjU5NjMsImV4cCI6MTYwNzQ1MjM2M30.AhmBcuU6cJ7A2VdN8w_FRJFNrWXDsgdPW7Fw7zEcE-WZGtqpc0fe3oWdsWAJ4t2p
+
+{
+    "newTodo":{
+        "text": "Verifier si tout marche avec user"
+    },
+    "user"{
+        "id":3
+    }
+}

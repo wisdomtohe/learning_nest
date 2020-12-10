@@ -18,6 +18,15 @@ export class User {
   @Column()
   name: string;
 
+  @Column()
+  prenom: string;
+
+  @Column()
+  username: string;
+
+  @Column()
+  adresse: string;
+
   @Column({ unique: true })
   email: string;
 

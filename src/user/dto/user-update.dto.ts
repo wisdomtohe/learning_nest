@@ -4,5 +4,5 @@ export class UserUpdate {
   @IsDefined()
   @IsString()
   @IsNotEmpty()
-  readonly name;
+  readonly username;
 }

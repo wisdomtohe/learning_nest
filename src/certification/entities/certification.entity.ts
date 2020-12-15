@@ -1,14 +1,10 @@
 import { Freelancer } from 'src/freelancer/entities/freelancer.entity';
-import { Skill } from 'src/skill/entities/skill.entity';
 import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
   CreateDateColumn,
-  OneToOne,
   JoinColumn,
-  ManyToMany,
-  JoinTable,
   ManyToOne,
 } from 'typeorm';
 

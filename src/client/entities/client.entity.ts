@@ -31,7 +31,7 @@ export class Client {
   total_money_spent: number;
 
   @Column()
-  overview: string;
+  adresse: string;
 
   @CreateDateColumn()
   date_registration: Date;

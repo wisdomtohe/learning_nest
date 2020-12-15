@@ -1,1 +1,4 @@
-export class CreatePaymentTypeDto {}
+export class CreatePaymentTypeDto {
+  @IsString()
+  readonly label: string;
+}

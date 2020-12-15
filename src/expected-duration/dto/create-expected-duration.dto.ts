@@ -1,1 +1,5 @@
-export class CreateExpectedDurationDto {}
+export class CreateExpectedDurationDto {
+  @IsString()
+  @IsDefined()
+  duree: string;
+}

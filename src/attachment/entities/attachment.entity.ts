@@ -1,11 +1,8 @@
-import { Client } from 'src/client/entities/client.entity';
-import { Contrat } from 'src/contrat/entities/contrat.entity';
 import { Message } from 'src/message/entities/message.entity';
 import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
-  OneToMany,
   JoinColumn,
   ManyToOne,
 } from 'typeorm';
@@ -16,10 +13,7 @@ export class Attachment {
   id: number;
 
   @Column()
-  name: string;
-
-  @Column()
-  adresse: string;
+  link_attachment: string;
 
   @ManyToOne(() => Message, message => message.attachments)
   @JoinColumn()

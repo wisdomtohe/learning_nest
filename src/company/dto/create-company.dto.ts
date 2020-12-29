@@ -1,4 +1,4 @@
-import { IsDate, IsDefined, IsNotEmpty, IsNumber } from "class-validator";
+import { IsDate, IsDefined, IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 export class CreateCompanyDto {
 

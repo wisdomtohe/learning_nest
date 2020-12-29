@@ -20,12 +20,32 @@ import { ComplexityModule } from './complexity/complexity.module';
 import { MessageModule } from './message/message.module';
 import { PropositionModule } from './proposition/proposition.module';
 import { ContratModule } from './contrat/contrat.module';
-import { AttachmentModule } from './attachment/attachment.module';
 import { StatutPropositionModule } from './statut-proposition/statut-proposition.module';
+
+import { AttachmentModule } from './attachment/attachment.module';
+import { UserModule } from './user/user.module';
 
 
 @Module({
-  imports: [TypeOrmModule.forRoot(), UserModule, AuthModule, TodoModule, FreelancerModule, ClientModule, CompanyModule, SkillModule, PaymentTypeModule, CertificationModule, TestModule, TestResultModule, JobModule, ExpectedDurationModule, ComplexityModule, MessageModule, PropositionModule, ContratModule, AttachmentModule, StatutPropositionModule],
+  imports: [TypeOrmModule.forRoot(),
+    UserModule, AuthModule, TodoModule,
+    FreelancerModule,
+    ClientModule,
+    CompanyModule,
+    SkillModule,
+    PaymentTypeModule,
+    CertificationModule,
+    TestModule,
+    TestResultModule,
+    JobModule,
+    ExpectedDurationModule,
+    ComplexityModule,
+    MessageModule,
+    PropositionModule,
+    ContratModule,
+    StatutPropositionModule,
+    AttachmentModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

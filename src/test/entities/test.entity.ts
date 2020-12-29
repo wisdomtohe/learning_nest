@@ -22,9 +22,6 @@ export class Test {
   @Column()
   link_test: string;
 
-  @CreateDateColumn()
-  date_registration: Date;
-
   @OneToMany(()=> TestResult, test_result => test_result.test)
   @JoinColumn()
   test_results: TestResult[];

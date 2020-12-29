@@ -1,4 +1,7 @@
   import { IsDate, IsDefined, IsNotEmpty, IsNumber } from "class-validator";
+  import { Exclude } from 'class-transformer';
+  import { User } from '../../user/user.entity';
+  import { Company } from '../../company/entities/company.entity';
 
 export class CreateClientDto {
 
@@ -15,5 +18,5 @@ export class CreateClientDto {
 
   @Exclude()
   company: Company;
-  
+
 }

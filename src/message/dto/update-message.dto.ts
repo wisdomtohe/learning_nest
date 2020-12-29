@@ -1,5 +1,9 @@
 import { PartialType } from '@nestjs/mapped-types';
 import { CreateMessageDto } from './create-message.dto';
+import { IsDate, IsDefined, IsOptional, IsString } from 'class-validator';
+import { Exclude } from 'class-transformer';
+import { Attachment } from '../../attachment/entities/attachment.entity';
+import { StatutProposition } from '../../statut-proposition/entities/statut-proposition.entity';
 
 export class UpdateMessageDto extends PartialType(CreateMessageDto) {
   @IsOptional()
